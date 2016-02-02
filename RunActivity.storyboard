@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="C2v-k9-ABY">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <scenes>
+        <!--Item-->
+        <scene sceneID="hmn-Yb-8C9">
+            <objects>
+                <navigationController storyboardIdentifier="runActivity" id="C2v-k9-ABY" customClass="RunActivityNavigationViewController" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" selectedImage="icon_tab_fujin_highlight" id="fSB-M0-HmL"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="tnS-vx-zbz">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.14901960780000001" green="0.56078431370000004" blue="0.7843137255" alpha="1" colorSpace="calibratedRGB"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="8ym-rn-Pc1" kind="relationship" relationship="rootViewController" id="9Zx-SD-dSf"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="P5e-Od-75X" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-19.5" y="218.25"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="rIm-t2-AEH">
+            <objects>
+                <viewController id="8ym-rn-Pc1" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Wpu-FU-Wbf"/>
+                        <viewControllerLayoutGuide type="bottom" id="GYD-TW-kzp"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="gta-jo-tst">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="AGo-Lb-Eqz"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Pzj-E3-Tx5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="769.5" y="218.25"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="icon_tab_fujin_highlight" width="26" height="26"/>
+    </resources>
+</document>
