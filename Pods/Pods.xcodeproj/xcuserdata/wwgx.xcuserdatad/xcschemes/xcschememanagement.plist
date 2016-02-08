@@ -14,22 +14,12 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>CSStickyHeaderFlowLayout.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>DACircularProgress.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>JSBadgeView-JSBadgeView.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>JSBadgeView.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>OMGHTTPURLRQ.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -39,17 +29,7 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>PromiseKit.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
 		<key>SDWebImage.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>SwiftyJSON.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -57,17 +37,7 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>105BB21DDA17F283BCA6C012BAB3E330</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>190ACD3A51BC90B85EADB13E9CDD207B</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>1D86A94C08764C3827D31781ED8EAFEF</key>
+		<key>30C445E6D8703D94CB06D42EB47820DE</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -82,27 +52,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>49EA40F053DC094904FC18162E6916CC</key>
+		<key>692BEF8CEF96DEABC9751584533C64E0</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>711422037321AA4CC26C7207C2C590C3</key>
+		<key>8B5AAAE7CB81068B8429858BB0573C71</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
 		<key>94624EC6C9739263AA965CFE2D8933F5</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>A00F51781201D70FE5D98D7CB0CC1505</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>C6BEBDFB090E728878F4BC75E68E1373</key>
 		<dict>
 			<key>primary</key>
 			<true/>

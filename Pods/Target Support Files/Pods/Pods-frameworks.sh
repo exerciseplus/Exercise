@@ -89,12 +89,9 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "${PODS_ROOT}/AVOSCloudDynamic/iOS/release-v3.2.2/Dynamic/AVOSCloud.framework"
   install_framework "${PODS_ROOT}/AVOSCloudIMDynamic/iOS/release-v3.2.2/Dynamic/AVOSCloudIM.framework"
   install_framework "Pods/Alamofire.framework"
+  install_framework "Pods/CSStickyHeaderFlowLayout.framework"
   install_framework "Pods/DACircularProgress.framework"
-  install_framework "Pods/JSBadgeView.framework"
-  install_framework "Pods/OMGHTTPURLRQ.framework"
-  install_framework "Pods/PromiseKit.framework"
   install_framework "Pods/SDWebImage.framework"
-  install_framework "Pods/SwiftyJSON.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "Pods/AFNetworking.framework"
@@ -102,10 +99,7 @@ if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "${PODS_ROOT}/AVOSCloudDynamic/iOS/release-v3.2.2/Dynamic/AVOSCloud.framework"
   install_framework "${PODS_ROOT}/AVOSCloudIMDynamic/iOS/release-v3.2.2/Dynamic/AVOSCloudIM.framework"
   install_framework "Pods/Alamofire.framework"
+  install_framework "Pods/CSStickyHeaderFlowLayout.framework"
   install_framework "Pods/DACircularProgress.framework"
-  install_framework "Pods/JSBadgeView.framework"
-  install_framework "Pods/OMGHTTPURLRQ.framework"
-  install_framework "Pods/PromiseKit.framework"
   install_framework "Pods/SDWebImage.framework"
-  install_framework "Pods/SwiftyJSON.framework"
 fi

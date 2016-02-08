@@ -26,31 +26,11 @@ PODS:
   - AVOSCloudDynamic (3.2.2)
   - AVOSCloudIMDynamic (3.2.2):
     - AVOSCloudDynamic
+  - CSStickyHeaderFlowLayout (0.2.10)
   - DACircularProgress (2.3.1)
-  - JSBadgeView (1.4.1)
-  - OMGHTTPURLRQ (3.0.2):
-    - OMGHTTPURLRQ/RQ (= 3.0.2)
-  - OMGHTTPURLRQ/FormURLEncode (3.0.2)
-  - OMGHTTPURLRQ/RQ (3.0.2):
-    - OMGHTTPURLRQ/FormURLEncode
-    - OMGHTTPURLRQ/UserAgent
-  - OMGHTTPURLRQ/UserAgent (3.0.2)
-  - PromiseKit (3.0.1):
-    - PromiseKit/Foundation (= 3.0.1)
-    - PromiseKit/QuartzCore (= 3.0.1)
-    - PromiseKit/UIKit (= 3.0.1)
-  - PromiseKit/CorePromise (3.0.1)
-  - PromiseKit/Foundation (3.0.1):
-    - OMGHTTPURLRQ (~> 3.0.0)
-    - PromiseKit/CorePromise
-  - PromiseKit/QuartzCore (3.0.1):
-    - PromiseKit/CorePromise
-  - PromiseKit/UIKit (3.0.1):
-    - PromiseKit/CorePromise
   - SDWebImage (3.7.5):
     - SDWebImage/Core (= 3.7.5)
   - SDWebImage/Core (3.7.5)
-  - SwiftyJSON (2.3.2)
 
 DEPENDENCIES:
   - AFNetworking (~> 2.0)
@@ -58,11 +38,9 @@ DEPENDENCIES:
   - AVOSCloudCrashReportingDynamic
   - AVOSCloudDynamic
   - AVOSCloudIMDynamic
+  - CSStickyHeaderFlowLayout
   - DACircularProgress
-  - JSBadgeView
-  - PromiseKit
   - SDWebImage
-  - SwiftyJSON
 
 SPEC CHECKSUMS:
   AFNetworking: cb8d14a848e831097108418f5d49217339d4eb60
@@ -70,11 +48,8 @@ SPEC CHECKSUMS:
   AVOSCloudCrashReportingDynamic: ba496ce6a010bb43cc2a2f6c8086667746e65919
   AVOSCloudDynamic: de57e0e0221d7d65a21bc87cda6514d505e5015b
   AVOSCloudIMDynamic: 417c0ccfaf2ccc1fcce8c15877708c31500bb676
+  CSStickyHeaderFlowLayout: 5366582779d8b7c9ba9b9cc729c218cc23888776
   DACircularProgress: 4dd437c0fc3da5161cb289e07ac449493d41db71
-  JSBadgeView: 3861ddee41094284d9468e6d0af5107f703aaac5
-  OMGHTTPURLRQ: 8376dc887d76a5a7e2a67881dc788f917a2f437c
-  PromiseKit: 19d12914484a15c25a46f72fde38579204a5dac6
   SDWebImage: 69c6303e3348fba97e03f65d65d4fbc26740f461
-  SwiftyJSON: 04ccea08915aa0109039157c7974cf0298da292a
 
 COCOAPODS: 0.39.0

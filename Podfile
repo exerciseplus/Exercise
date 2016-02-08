@@ -1,14 +1,13 @@
 platform :ios, "8.0"
+
+
+pod "CSStickyHeaderFlowLayout"
 use_frameworks!
 
 pod "AFNetworking", "~> 2.0"
 pod "SDWebImage"
-pod "PromiseKit"
 pod "Alamofire"
-pod "SwiftyJSON"
-pod "JSBadgeView"
 pod "DACircularProgress"
-
 pod 'AVOSCloudDynamic'
 
 # 如果使用实时通信功能，可以添加：
