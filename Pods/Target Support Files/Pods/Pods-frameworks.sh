@@ -91,6 +91,7 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "Pods/Alamofire.framework"
   install_framework "Pods/CSStickyHeaderFlowLayout.framework"
   install_framework "Pods/DACircularProgress.framework"
+  install_framework "Pods/FlatUIKit.framework"
   install_framework "Pods/SDWebImage.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
@@ -101,5 +102,6 @@ if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "Pods/Alamofire.framework"
   install_framework "Pods/CSStickyHeaderFlowLayout.framework"
   install_framework "Pods/DACircularProgress.framework"
+  install_framework "Pods/FlatUIKit.framework"
   install_framework "Pods/SDWebImage.framework"
 fi

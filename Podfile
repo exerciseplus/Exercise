@@ -1,6 +1,6 @@
 platform :ios, "8.0"
 
-
+pod 'FlatUIKit'
 pod "CSStickyHeaderFlowLayout"
 use_frameworks!
 

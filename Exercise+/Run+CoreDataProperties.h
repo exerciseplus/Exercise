@@ -18,7 +18,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nullable, nonatomic, retain) NSNumber *distance;
 @property (nullable, nonatomic, retain) NSNumber *duration;
 @property (nullable, nonatomic, retain) NSDate *timestamp;
-@property (nullable, nonatomic, retain) NSSet<Location *> *locations;
+@property (nullable, nonatomic, retain) NSOrderedSet *locations;//NSSet<Location *> *locations;
 
 @end
 

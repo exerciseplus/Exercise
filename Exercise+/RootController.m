@@ -9,6 +9,7 @@
 #import "RootController.h"
 #import "UserUtility.h"
 #import "RunActivityNavigationViewController.h"
+#import "HomeRunCollectionViewController.h"
 @interface RootController ()
 
 @end
@@ -18,6 +19,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     RunActivityNavigationViewController* runActivityConatroller = [[UIStoryboard storyboardWithName:@"RunActivity" bundle:nil] instantiateViewControllerWithIdentifier:@"runActivity"];
+    HomeRunCollectionViewController* homeRun = (HomeRunCollectionViewController*)runActivityConatroller.topViewController;
+    homeRun.managedObjectContext = self.managedObjectContext;
     self.viewControllers = [NSArray arrayWithObjects:runActivityConatroller ,nil];
     //[self initTabBarItem];
     // Do any additional setup after loading the view.

@@ -9,5 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface HomeRunCollectionViewController : UICollectionViewController
+@property (strong, nonatomic) NSManagedObjectContext *managedObjectContext;
+
 
 @end

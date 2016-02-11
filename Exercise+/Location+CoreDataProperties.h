@@ -16,8 +16,8 @@ NS_ASSUME_NONNULL_BEGIN
 @interface Location (CoreDataProperties)
 
 @property (nullable, nonatomic, retain) NSNumber *latitude;
-@property (nullable, nonatomic, retain) NSNumber *longtitude;
-@property (nullable, nonatomic, retain) NSNumber *timestamp;
+@property (nullable, nonatomic, retain) NSNumber *longitude;
+@property (nullable, nonatomic, retain) NSDate *timestamp;
 @property (nullable, nonatomic, retain) NSManagedObject *run;
 
 @end

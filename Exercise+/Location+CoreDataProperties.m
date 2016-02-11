@@ -14,7 +14,7 @@
 @implementation Location (CoreDataProperties)
 
 @dynamic latitude;
-@dynamic longtitude;
+@dynamic longitude;
 @dynamic timestamp;
 @dynamic run;
 

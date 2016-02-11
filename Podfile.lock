@@ -28,6 +28,7 @@ PODS:
     - AVOSCloudDynamic
   - CSStickyHeaderFlowLayout (0.2.10)
   - DACircularProgress (2.3.1)
+  - FlatUIKit (1.6.2)
   - SDWebImage (3.7.5):
     - SDWebImage/Core (= 3.7.5)
   - SDWebImage/Core (3.7.5)
@@ -40,6 +41,7 @@ DEPENDENCIES:
   - AVOSCloudIMDynamic
   - CSStickyHeaderFlowLayout
   - DACircularProgress
+  - FlatUIKit
   - SDWebImage
 
 SPEC CHECKSUMS:
@@ -50,6 +52,7 @@ SPEC CHECKSUMS:
   AVOSCloudIMDynamic: 417c0ccfaf2ccc1fcce8c15877708c31500bb676
   CSStickyHeaderFlowLayout: 5366582779d8b7c9ba9b9cc729c218cc23888776
   DACircularProgress: 4dd437c0fc3da5161cb289e07ac449493d41db71
+  FlatUIKit: 1b41f0d4952ce8d970d8479ce79df54a960242c4
   SDWebImage: 69c6303e3348fba97e03f65d65d4fbc26740f461
 
 COCOAPODS: 0.39.0

@@ -8,7 +8,9 @@
 
 #import "AppDelegate.h"
 #import <AVOSCloud/AVOSCloud.h>
-
+#import "RootController.h"
+#import "RunActivityNavigationViewController.h"
+#import "HomeRunCollectionViewController.h"
 @interface AppDelegate ()
 
 @end
@@ -20,6 +22,15 @@
     // Override point for customization after application launch.
     [AVOSCloud setApplicationId:@"2sMfqIJjyp0Hq3P5qVpF1Y8Q-gzGzoHsz"
                       clientKey:@"y7D0o9l1XrSmMgLj7nf51jsT"];
+    RootController* controller = (RootController*) self.window.rootViewController;
+    controller.managedObjectContext = self.managedObjectContext;
+//    for (UIViewController* item in controller.viewControllers){
+//        if ([item isKindOfClass:[RunActivityNavigationViewController class]]) {
+//            RunActivityNavigationViewController* runActivity = (RunActivityNavigationViewController*) item;
+//            HomeRunCollectionViewController* homeRun = (HomeRunCollectionViewController*)runActivity.topViewController;
+//            homeRun.managedObjectContext = self.managedObjectContext;
+//        }
+//    }
     return YES;
 }
 

@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface RootController : UITabBarController
-
+@property (strong, nonatomic) NSManagedObjectContext *managedObjectContext;
 @end

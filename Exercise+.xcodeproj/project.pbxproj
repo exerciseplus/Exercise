@@ -17,6 +17,11 @@
 		4707CCA21C59E37500AF794E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4707CCA11C59E37500AF794E /* Main.storyboard */; };
 		4707CCA91C59E5DD00AF794E /* RootController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4707CCA81C59E5DD00AF794E /* RootController.m */; };
 		4707CCAC1C59EE9600AF794E /* SignINViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4707CCAB1C59EE9600AF794E /* SignINViewController.m */; };
+		474DF3D21C6C3A5000047686 /* MathController.m in Sources */ = {isa = PBXBuildFile; fileRef = 474DF3D11C6C3A5000047686 /* MathController.m */; };
+		474DF3D51C6C401100047686 /* MulticolorPolylineSegment.m in Sources */ = {isa = PBXBuildFile; fileRef = 474DF3D41C6C401100047686 /* MulticolorPolylineSegment.m */; };
+		474DF3D71C6C667C00047686 /* ionicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 474DF3D61C6C604500047686 /* ionicons.ttf */; };
+		474DF3DA1C6C6EE700047686 /* RunDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 474DF3D91C6C6EE700047686 /* RunDetailViewController.m */; };
+		474DF3DD1C6C983500047686 /* RunDetailTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 474DF3DC1C6C983500047686 /* RunDetailTableViewController.m */; };
 		4750E71F1C5F5E58004BD2BE /* UserUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 4750E71E1C5F5E58004BD2BE /* UserUtility.m */; };
 		4750E7211C610573004BD2BE /* RunActivity.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4750E7201C610573004BD2BE /* RunActivity.storyboard */; };
 		4750E7241C610661004BD2BE /* RunActivityNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4750E7231C610661004BD2BE /* RunActivityNavigationViewController.m */; };
@@ -30,6 +35,8 @@
 		4750E7521C64893F004BD2BE /* HomeRunCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4750E7511C64893F004BD2BE /* HomeRunCell.m */; };
 		4750E7561C648997004BD2BE /* MapHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4750E7551C648997004BD2BE /* MapHeader.xib */; };
 		4750E7591C64A9E4004BD2BE /* MyPulling.m in Sources */ = {isa = PBXBuildFile; fileRef = 4750E7581C64A9E4004BD2BE /* MyPulling.m */; };
+		4750E75C1C68F0BC004BD2BE /* RunController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4750E75B1C68F0BC004BD2BE /* RunController.m */; };
+		4750E75F1C6A0735004BD2BE /* MapHeaderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4750E75E1C6A0735004BD2BE /* MapHeaderCell.m */; };
 		A0DF6C16AED44C05D5667D10 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C89FB7D32412AAF21E01E71 /* Pods.framework */; };
 /* End PBXBuildFile section */
 
@@ -71,6 +78,15 @@
 		4707CCA81C59E5DD00AF794E /* RootController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootController.m; sourceTree = "<group>"; };
 		4707CCAA1C59EE9600AF794E /* SignINViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignINViewController.h; sourceTree = "<group>"; };
 		4707CCAB1C59EE9600AF794E /* SignINViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignINViewController.m; sourceTree = "<group>"; };
+		474DF3D01C6C3A5000047686 /* MathController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MathController.h; sourceTree = "<group>"; };
+		474DF3D11C6C3A5000047686 /* MathController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MathController.m; sourceTree = "<group>"; };
+		474DF3D31C6C401100047686 /* MulticolorPolylineSegment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MulticolorPolylineSegment.h; sourceTree = "<group>"; };
+		474DF3D41C6C401100047686 /* MulticolorPolylineSegment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MulticolorPolylineSegment.m; sourceTree = "<group>"; };
+		474DF3D61C6C604500047686 /* ionicons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ionicons.ttf; sourceTree = "<group>"; };
+		474DF3D81C6C6EE700047686 /* RunDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RunDetailViewController.h; sourceTree = "<group>"; };
+		474DF3D91C6C6EE700047686 /* RunDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RunDetailViewController.m; sourceTree = "<group>"; };
+		474DF3DB1C6C983500047686 /* RunDetailTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RunDetailTableViewController.h; sourceTree = "<group>"; };
+		474DF3DC1C6C983500047686 /* RunDetailTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RunDetailTableViewController.m; sourceTree = "<group>"; };
 		4750E71D1C5F5E58004BD2BE /* UserUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserUtility.h; sourceTree = "<group>"; };
 		4750E71E1C5F5E58004BD2BE /* UserUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserUtility.m; sourceTree = "<group>"; };
 		4750E7201C610573004BD2BE /* RunActivity.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = RunActivity.storyboard; sourceTree = "<group>"; };
@@ -94,6 +110,10 @@
 		4750E7551C648997004BD2BE /* MapHeader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MapHeader.xib; sourceTree = "<group>"; };
 		4750E7571C64A9E4004BD2BE /* MyPulling.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyPulling.h; sourceTree = "<group>"; };
 		4750E7581C64A9E4004BD2BE /* MyPulling.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyPulling.m; sourceTree = "<group>"; };
+		4750E75A1C68F0BC004BD2BE /* RunController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RunController.h; sourceTree = "<group>"; };
+		4750E75B1C68F0BC004BD2BE /* RunController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RunController.m; sourceTree = "<group>"; };
+		4750E75D1C6A0734004BD2BE /* MapHeaderCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapHeaderCell.h; sourceTree = "<group>"; };
+		4750E75E1C6A0735004BD2BE /* MapHeaderCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapHeaderCell.m; sourceTree = "<group>"; };
 		99A1A0AF6DD404C4455E409A /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		E79380BB5589E05182FC0E83 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -178,6 +198,7 @@
 		4707CC6A1C59E1E200AF794E /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				474DF3D61C6C604500047686 /* ionicons.ttf */,
 				4707CC6B1C59E1E200AF794E /* main.m */,
 			);
 			name = "Supporting Files";
@@ -226,6 +247,10 @@
 		4707CCAD1C5A0FEA00AF794E /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				474DF3D31C6C401100047686 /* MulticolorPolylineSegment.h */,
+				474DF3D41C6C401100047686 /* MulticolorPolylineSegment.m */,
+				474DF3D01C6C3A5000047686 /* MathController.h */,
+				474DF3D11C6C3A5000047686 /* MathController.m */,
 				4750E71D1C5F5E58004BD2BE /* UserUtility.h */,
 				4750E71E1C5F5E58004BD2BE /* UserUtility.m */,
 			);
@@ -254,6 +279,12 @@
 				4750E7231C610661004BD2BE /* RunActivityNavigationViewController.m */,
 				4750E7481C62452F004BD2BE /* HomeRunCollectionViewController.h */,
 				4750E7491C62452F004BD2BE /* HomeRunCollectionViewController.m */,
+				4750E75A1C68F0BC004BD2BE /* RunController.h */,
+				4750E75B1C68F0BC004BD2BE /* RunController.m */,
+				474DF3D81C6C6EE700047686 /* RunDetailViewController.h */,
+				474DF3D91C6C6EE700047686 /* RunDetailViewController.m */,
+				474DF3DB1C6C983500047686 /* RunDetailTableViewController.h */,
+				474DF3DC1C6C983500047686 /* RunDetailTableViewController.m */,
 			);
 			name = run;
 			sourceTree = "<group>";
@@ -276,6 +307,8 @@
 				4750E7511C64893F004BD2BE /* HomeRunCell.m */,
 				4750E7571C64A9E4004BD2BE /* MyPulling.h */,
 				4750E7581C64A9E4004BD2BE /* MyPulling.m */,
+				4750E75D1C6A0734004BD2BE /* MapHeaderCell.h */,
+				4750E75E1C6A0735004BD2BE /* MapHeaderCell.m */,
 			);
 			name = Run;
 			sourceTree = "<group>";
@@ -359,6 +392,7 @@
 				TargetAttributes = {
 					4707CC661C59E1E200AF794E = {
 						CreatedOnToolsVersion = 7.1;
+						DevelopmentTeam = 9WTPPALUMD;
 					};
 					4707CC821C59E1E200AF794E = {
 						CreatedOnToolsVersion = 7.1;
@@ -395,6 +429,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				474DF3D71C6C667C00047686 /* ionicons.ttf in Resources */,
 				4750E7561C648997004BD2BE /* MapHeader.xib in Resources */,
 				4707CC7D1C59E1E200AF794E /* LaunchScreen.storyboard in Resources */,
 				4707CC7A1C59E1E200AF794E /* Assets.xcassets in Resources */,
@@ -475,6 +510,10 @@
 				4750E7431C621E18004BD2BE /* Run.m in Sources */,
 				4707CC781C59E1E200AF794E /* Exercise_.xcdatamodeld in Sources */,
 				4750E74F1C64875B004BD2BE /* SectionHeader.m in Sources */,
+				474DF3DA1C6C6EE700047686 /* RunDetailViewController.m in Sources */,
+				474DF3DD1C6C983500047686 /* RunDetailTableViewController.m in Sources */,
+				4750E75C1C68F0BC004BD2BE /* RunController.m in Sources */,
+				474DF3D51C6C401100047686 /* MulticolorPolylineSegment.m in Sources */,
 				4750E7591C64A9E4004BD2BE /* MyPulling.m in Sources */,
 				4750E71F1C5F5E58004BD2BE /* UserUtility.m in Sources */,
 				4750E7241C610661004BD2BE /* RunActivityNavigationViewController.m in Sources */,
@@ -482,8 +521,10 @@
 				4750E7411C621E18004BD2BE /* Location.m in Sources */,
 				4750E7401C621E18004BD2BE /* Location+CoreDataProperties.m in Sources */,
 				4750E74A1C62452F004BD2BE /* HomeRunCollectionViewController.m in Sources */,
+				474DF3D21C6C3A5000047686 /* MathController.m in Sources */,
 				4707CC6C1C59E1E200AF794E /* main.m in Sources */,
 				4750E7421C621E18004BD2BE /* Run+CoreDataProperties.m in Sources */,
+				4750E75F1C6A0735004BD2BE /* MapHeaderCell.m in Sources */,
 				4707CCAC1C59EE9600AF794E /* SignINViewController.m in Sources */,
 				4750E7521C64893F004BD2BE /* HomeRunCell.m in Sources */,
 				4707CCA91C59E5DD00AF794E /* RootController.m in Sources */,
@@ -620,10 +661,13 @@
 			baseConfigurationReference = 99A1A0AF6DD404C4455E409A /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "Exercise+/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "---.Exercise-";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -632,10 +676,13 @@
 			baseConfigurationReference = E79380BB5589E05182FC0E83 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "Exercise+/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "---.Exercise-";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
