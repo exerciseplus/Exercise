@@ -16,6 +16,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.navigationController.interactivePopGestureRecognizer.enabled = YES;
     [[self tabBarItem] setImage:[UIImage imageNamed:@"icon_tab_fujin_highlight"]];
     //@"icon_tab_fujin_highlight"];
     // Do any additional setup after loading the view.

@@ -11,5 +11,6 @@
 @interface HomeRunCell : UICollectionViewCell
 @property (weak, nonatomic) IBOutlet UILabel *textLabel;
 @property (weak, nonatomic) IBOutlet UILabel *indicatorLabel;
+@property (weak, nonatomic) IBOutlet UILabel *documentIcon;
 
 @end

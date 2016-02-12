@@ -37,6 +37,8 @@
 		4750E7591C64A9E4004BD2BE /* MyPulling.m in Sources */ = {isa = PBXBuildFile; fileRef = 4750E7581C64A9E4004BD2BE /* MyPulling.m */; };
 		4750E75C1C68F0BC004BD2BE /* RunController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4750E75B1C68F0BC004BD2BE /* RunController.m */; };
 		4750E75F1C6A0735004BD2BE /* MapHeaderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4750E75E1C6A0735004BD2BE /* MapHeaderCell.m */; };
+		47D338421C6CD84100209B2D /* PastRunViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 47D338411C6CD84100209B2D /* PastRunViewController.m */; };
+		47D338451C6CD8C900209B2D /* PastRunCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 47D338441C6CD8C900209B2D /* PastRunCell.m */; };
 		A0DF6C16AED44C05D5667D10 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C89FB7D32412AAF21E01E71 /* Pods.framework */; };
 /* End PBXBuildFile section */
 
@@ -114,6 +116,10 @@
 		4750E75B1C68F0BC004BD2BE /* RunController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RunController.m; sourceTree = "<group>"; };
 		4750E75D1C6A0734004BD2BE /* MapHeaderCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapHeaderCell.h; sourceTree = "<group>"; };
 		4750E75E1C6A0735004BD2BE /* MapHeaderCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapHeaderCell.m; sourceTree = "<group>"; };
+		47D338401C6CD84000209B2D /* PastRunViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PastRunViewController.h; sourceTree = "<group>"; };
+		47D338411C6CD84100209B2D /* PastRunViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PastRunViewController.m; sourceTree = "<group>"; };
+		47D338431C6CD8C900209B2D /* PastRunCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PastRunCell.h; sourceTree = "<group>"; };
+		47D338441C6CD8C900209B2D /* PastRunCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PastRunCell.m; sourceTree = "<group>"; };
 		99A1A0AF6DD404C4455E409A /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		E79380BB5589E05182FC0E83 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -285,6 +291,8 @@
 				474DF3D91C6C6EE700047686 /* RunDetailViewController.m */,
 				474DF3DB1C6C983500047686 /* RunDetailTableViewController.h */,
 				474DF3DC1C6C983500047686 /* RunDetailTableViewController.m */,
+				47D338401C6CD84000209B2D /* PastRunViewController.h */,
+				47D338411C6CD84100209B2D /* PastRunViewController.m */,
 			);
 			name = run;
 			sourceTree = "<group>";
@@ -309,6 +317,8 @@
 				4750E7581C64A9E4004BD2BE /* MyPulling.m */,
 				4750E75D1C6A0734004BD2BE /* MapHeaderCell.h */,
 				4750E75E1C6A0735004BD2BE /* MapHeaderCell.m */,
+				47D338431C6CD8C900209B2D /* PastRunCell.h */,
+				47D338441C6CD8C900209B2D /* PastRunCell.m */,
 			);
 			name = Run;
 			sourceTree = "<group>";
@@ -507,6 +517,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				47D338451C6CD8C900209B2D /* PastRunCell.m in Sources */,
 				4750E7431C621E18004BD2BE /* Run.m in Sources */,
 				4707CC781C59E1E200AF794E /* Exercise_.xcdatamodeld in Sources */,
 				4750E74F1C64875B004BD2BE /* SectionHeader.m in Sources */,
@@ -523,6 +534,7 @@
 				4750E74A1C62452F004BD2BE /* HomeRunCollectionViewController.m in Sources */,
 				474DF3D21C6C3A5000047686 /* MathController.m in Sources */,
 				4707CC6C1C59E1E200AF794E /* main.m in Sources */,
+				47D338421C6CD84100209B2D /* PastRunViewController.m in Sources */,
 				4750E7421C621E18004BD2BE /* Run+CoreDataProperties.m in Sources */,
 				4750E75F1C6A0735004BD2BE /* MapHeaderCell.m in Sources */,
 				4707CCAC1C59EE9600AF794E /* SignINViewController.m in Sources */,

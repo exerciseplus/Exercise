@@ -13,14 +13,16 @@
 #import "MapHeaderCell.h"
 #import "RunController.h"
 #import "Run.h"
+#import "PastRunViewController.h"
 #import <CoreLocation/CoreLocation.h>
 #import <MapKit/MapKit.h>
 
-@interface HomeRunCollectionViewController ()<CLLocationManagerDelegate,MKMapViewDelegate>
+@interface HomeRunCollectionViewController ()<CLLocationManagerDelegate,MKMapViewDelegate,UICollectionViewDelegateFlowLayout>
 @property (nonatomic, strong) NSArray *sections;
 @property (nonatomic, strong) UINib *headerNib;
 @property (nonatomic, strong) CLLocationManager *locationManager;
 @property(nonatomic,strong)MKMapView *mapView;
+@property (strong, nonatomic) NSArray *runArray;
 @end
 
 @implementation HomeRunCollectionViewController
@@ -32,11 +34,9 @@ static NSString * const reuseIdentifier = @"Cell";
     self = [super initWithCoder:aDecoder];
     if (self) {
         self.sections = @[
-                          @{@"Facebook":@"http://facebook.com"},
-                          @{@"Tumblr":@"http://tumblr.com"},
-                          @{@"Pinterest":@"http://pinterest.com"},
-                          @{@"Instagram":@"http://instagram.com"},
-                          @{@"Github":@"http://github.com"},
+                          @{@"锻炼记录":@"http://facebook.com"},
+                           @{@"锻炼记录":@"http://facebook.com"},
+                           @{@"锻炼记录":@"http://facebook.com"}
                           ];
         
         self.headerNib = [UINib nibWithNibName:@"MapHeader" bundle:nil];
@@ -54,10 +54,6 @@ withReuseIdentifier:@"header"];
 }
 
 
-//- (void)willAnimateRotationToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation duration:(NSTimeInterval)duration {
-//    [self reloadLayout];
-//}
-
 -(void)reloadLayout{
     CSStickyHeaderFlowLayout *layout = (id)self.collectionViewLayout;
     
@@ -70,21 +66,23 @@ withReuseIdentifier:@"header"];
 }
 -(void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
-    NSLog(@"width%f",self.view.frame.size.width);
+    NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
+    NSEntityDescription *entity = [NSEntityDescription
+                                   entityForName:@"Run" inManagedObjectContext:self.managedObjectContext];
+    [fetchRequest setEntity:entity];
+    
+    NSSortDescriptor *sortDescriptor = [[NSSortDescriptor alloc] initWithKey:@"timestamp" ascending:NO];
+    [fetchRequest setSortDescriptors:@[sortDescriptor]];
+    
+     self.runArray = [self.managedObjectContext executeFetchRequest:fetchRequest error:nil];
+    [self.collectionView reloadData];
    // [self reloadLayout];
 }
--(void)viewDidAppear:(BOOL)animated{
-    [super viewDidAppear:animated];
-    [self reloadLayout];
 
-    NSLog(@"width%f",self.view.frame.size.width);
-
-}
 
 - (IBAction)startToRun:(UIButton *)sender {
      RunController* runController = [[UIStoryboard storyboardWithName:@"RunActivity" bundle:nil] instantiateViewControllerWithIdentifier:@"runController"];
     runController.managedObjectContext = self.managedObjectContext;
-//    [self.navigationController pushViewController:runController animated:true];
     runController.navigation = self.navigationController;
     [self presentViewController:runController animated:true completion:nil];
 }
@@ -116,15 +114,6 @@ withReuseIdentifier:@"header"];
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 #pragma mark <UICollectionViewDataSource>
 
@@ -139,15 +128,14 @@ withReuseIdentifier:@"header"];
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
-    NSDictionary *obj = self.sections[indexPath.section];
-    
     HomeRunCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"homeRunCell"
                                                              forIndexPath:indexPath];
     
-    cell.textLabel.text = [[obj allValues] firstObject];
+    cell.textLabel.text = [NSString stringWithFormat:@"%lu次", (unsigned long)[self.runArray count]];//[[obj allValues] firstObject];
     NSString* indicator = @"\uf3d3";
+     NSString* document = @"\uf381";
     cell.indicatorLabel.text = indicator;
-    //[cell setAccessibilityLabel:indicator];
+    cell.documentIcon.text = document;
     return cell;
 
 }
@@ -166,9 +154,6 @@ withReuseIdentifier:@"header"];
         MapHeaderCell* cell = [collectionView dequeueReusableSupplementaryViewOfKind:kind
                                                                  withReuseIdentifier:@"header"
                                                                         forIndexPath:indexPath];
-//        UICollectionReusableView *cell = [collectionView dequeueReusableSupplementaryViewOfKind:kind
-//                                                                            withReuseIdentifier:@"header"
-//                                                                                   forIndexPath:indexPath];
         [self startLocationUpdates];
         self.mapView = cell.mapView;
         self.mapView.delegate = self;
@@ -179,6 +164,20 @@ withReuseIdentifier:@"header"];
     return nil;
 }
 
+-(void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
+    NSLog(@"indexPath%@",indexPath);
+    PastRunViewController* runController = [[UIStoryboard storyboardWithName:@"RunActivity" bundle:nil] instantiateViewControllerWithIdentifier:@"pastRunViewController"];
+    runController.runArray = self.runArray;
+    [self.navigationController pushViewController:runController animated:true];
+}
+//- (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout referenceSizeForHeaderInSection:(NSInteger)section
+//{
+//    if (section == 0) {
+//        return CGSizeZero;
+//    }else {
+//        return CGSizeMake(CGRectGetWidth(collectionView.bounds), 135);
+//    }
+//}
 
 -(void)mapView:(MKMapView *)mapView didUpdateUserLocation:(MKUserLocation *)userLocation{
     MKCoordinateRegion region =
@@ -186,35 +185,14 @@ withReuseIdentifier:@"header"];
     [self.mapView setRegion:region animated:YES];
 
 }
-#pragma mark <UICollectionViewDelegate>
 
-/*
-// Uncomment this method to specify if the specified item should be highlighted during tracking
-- (BOOL)collectionView:(UICollectionView *)collectionView shouldHighlightItemAtIndexPath:(NSIndexPath *)indexPath {
-	return YES;
-}
-*/
+//- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+//{
+//    if ([[segue destinationViewController] isKindOfClass:[PastRunViewController class]]) {
+//        PastRunViewController* viewController = (PastRunViewController*)[segue destinationViewController];
+//        viewController.runArray = self.runArray;
+//    }
+//}
 
-/*
-// Uncomment this method to specify if the specified item should be selected
-- (BOOL)collectionView:(UICollectionView *)collectionView shouldSelectItemAtIndexPath:(NSIndexPath *)indexPath {
-    return YES;
-}
-*/
-
-/*
-// Uncomment these methods to specify if an action menu should be displayed for the specified item, and react to actions performed on the item
-- (BOOL)collectionView:(UICollectionView *)collectionView shouldShowMenuForItemAtIndexPath:(NSIndexPath *)indexPath {
-	return NO;
-}
-
-- (BOOL)collectionView:(UICollectionView *)collectionView canPerformAction:(SEL)action forItemAtIndexPath:(NSIndexPath *)indexPath withSender:(id)sender {
-	return NO;
-}
-
-- (void)collectionView:(UICollectionView *)collectionView performAction:(SEL)action forItemAtIndexPath:(NSIndexPath *)indexPath withSender:(id)sender {
-	
-}
-*/
 
 @end
